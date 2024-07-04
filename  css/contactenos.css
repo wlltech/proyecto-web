@@ -1,0 +1,21 @@
+label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+input {
+    display: block;
+    padding: 4px;
+    width: 350px;
+    margin-bottom: 15px;
+}
+
+.boton {
+    background-color: #006a43;
+    color: #ffffff;
+    border-radius: 15px;
+    border: 0.5px solid #006a43;
+    padding: 5px 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}

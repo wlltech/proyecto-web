@@ -1,1 +1,1 @@
-# proyecto-web
+# proyecto-cotizador-mailing

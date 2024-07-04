@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketin por Correo Electrónico</title>
+    <link rel="stylesheet" href="./ css/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Hubo un problema con la solicitud fetch:', error);
+            });
+    </script>
+    <main>
+        <section class="informacion__destacada">
+            <div>
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="informacion__destacada-boton">
+                    <a href="#">Pruébalo ahora</a>
+                </div>
+            </div>
+            <div>
+                <img src="./imagenes/nuevo-mensaje.png" alt="Logo" class="informacion__destacada-imagen">
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Hubo un problema con la solicitud fetch:', error);
+            });
+    </script>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+<!---->
