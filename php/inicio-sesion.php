@@ -2,6 +2,9 @@
 // Incluir el archivo de conexión
 include 'conexion.php';
 
+// Iniciar sesión
+session_start();
+
 // Obtener los datos del formulario
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -15,7 +18,9 @@ $result = $stmt->get_result();
 // Verificar si hay un usuario que coincida con las credenciales
 if ($result->num_rows > 0) {
     // Inicio de sesión exitoso
-    echo "Inicio de sesión exitoso. ¡Bienvenido, " . htmlspecialchars($username) . "!";
+    $_SESSION['username'] = $username;
+    header("Location: administracion.php");
+    exit();
 } else {
     // Credenciales incorrectas
     echo "Nombre de usuario o contraseña incorrectos.";
