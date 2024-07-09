@@ -58,7 +58,7 @@ if ($result->num_rows > 0) {
     <body>
         <div id="header"></div>
         <script>
-            fetch('../header.html')
+            fetch('../header-php.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('header').innerHTML = data;
@@ -81,15 +81,15 @@ if ($result->num_rows > 0) {
         </main>
         <div id="footer"></div>
         <script>
-            fetch('footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('../footer').innerHTML = data;
-                })
-                .catch(error => {
-                    console.error('Hubo un problema con la solicitud fetch:', error);
-                });
-        </script>
+        fetch('../footer-php.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Hubo un problema con la solicitud fetch:', error);
+            });
+    </script>
     </body>
     </html>
     <?php

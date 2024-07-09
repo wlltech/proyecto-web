@@ -1,0 +1,21 @@
+.persona__imagen {
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    justify-content: center;
+}
+
+.persona__imagen--wilman--hoteleria {
+    background-image: url(/assets/img/personas/pizza.gif);
+}
+
+.persona__imagen--wilman--mantenimiento {
+    background-image: url(/assets/img/personas/vegetales.gif);
+}
+
+.persona__imagen--wilman--tecnologo {
+    background-image: url(/assets/img/personas/cafe.gif);
+}

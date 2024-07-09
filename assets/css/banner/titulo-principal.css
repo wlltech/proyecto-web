@@ -1,0 +1,25 @@
+.tituloPrincipal {
+    position: absolute;
+    font-size: 5rem;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 8);
+    font-family: var(--font-primary);
+}
+
+@media (max-width: 768px) {
+    .tituloPrincipal {
+        font-size: 2rem;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 8);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .tituloPrincipal {
+        font-size: 3rem;
+    }  
+}

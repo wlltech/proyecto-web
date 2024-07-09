@@ -1,0 +1,7 @@
+.persona_cargo {
+    text-align: center;
+    font-family: var(--font-secundary);
+    font-size: 1.25rem;
+    color: var(--color-text-tertiary);
+    padding: 0 1rem 0 1rem;
+}

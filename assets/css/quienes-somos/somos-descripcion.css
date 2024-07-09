@@ -1,0 +1,7 @@
+.somos_descripcion {
+    font-family: var(--font-secondary);
+    font-size: 2rem;
+    color: var(--color-text-tertiary);
+    font-weight: 100;
+    text-align: center;
+}

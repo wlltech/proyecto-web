@@ -1,0 +1,18 @@
+/* Variables de colores */
+
+:root {
+    --color-primary: #2f889e;
+    --color-secondary: #a3d7d8;
+    --color-tertiary: #f7e2c0;
+    --color-text-primary: #fbf1dc;
+    --color-text-secondary: #b41612;
+    --color-text-tertiary: #807f80;
+}
+
+/* Variables de fuentes */
+
+:root {
+    --font-primary: 'Pacifico', cursive;
+    --font-secundary: 'Voces', cursive;
+    --font-titles: 'Tsukimi Rounded', sans-serif;
+}

@@ -1,0 +1,7 @@
+.rodapie__lista {
+    display: flex;
+}
+
+.rodapie__item {
+    list-style: none;
+}

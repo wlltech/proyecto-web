@@ -1,0 +1,5 @@
+.receta__nombre {
+    font-family: var(--font-titles);
+    font-size: 1.5rem;
+    margin: 2rem 1rem;
+}

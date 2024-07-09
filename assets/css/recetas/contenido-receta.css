@@ -1,0 +1,9 @@
+.receta {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem;
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+}

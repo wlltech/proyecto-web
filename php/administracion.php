@@ -29,7 +29,7 @@ $result = mysqli_query($mysqli, $query);
 <body>
     <div id="header"></div>
     <script>
-        fetch('../header.html')
+        fetch('../header-php.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
@@ -68,7 +68,7 @@ $result = mysqli_query($mysqli, $query);
     </main>
     <div id="footer"></div>
     <script>
-        fetch('../footer.html')
+        fetch('../footer-php.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('footer').innerHTML = data;

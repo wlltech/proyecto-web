@@ -1,0 +1,41 @@
+.menu {
+    display: flex;
+}
+
+.menu__item {
+    list-style: none;
+} 
+
+.menu__link {
+    text-decoration: none;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    color: var(--color-text-primary);
+    font-weight: 500;
+}
+
+a.menu__item-destacado {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.menu__link:hover {
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px ){
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu__item {
+        margin: 0.5rem 0;
+    } 
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .menu__item {
+        margin: 0.5rem 0;
+    } 
+}

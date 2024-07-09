@@ -1,0 +1,5 @@
+.info__titulo {
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    color: var(--color-text-secondary);
+}

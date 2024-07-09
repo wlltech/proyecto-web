@@ -1,0 +1,5 @@
+.info__descripcion {
+    color: var(--color-text-tertiary);
+    font-size: 2rem;
+    font-weight: 200;
+}

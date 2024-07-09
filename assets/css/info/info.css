@@ -1,0 +1,10 @@
+.info {
+    text-align: center;
+    padding: 3rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .info {
+        padding: 0;
+    }
+}

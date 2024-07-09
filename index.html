@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketin por Correo Electrónico</title>
-    <link rel="stylesheet" href="./ css/styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipe Memoirs</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comme:wght@200;300&family=Montserrat:wght@100&family=Pacifico&family=Playfair+Display:wght@500&family=Tsukimi+Rounded:wght@700&family=Voces&display=swap"
+            rel="stylesheet">
+        <link href="./assets/css/normalize.css" rel="stylesheet" />
+        <link href="./assets/css/reset.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/css/variables.css">
+        <link rel="stylesheet" href="./assets/css/cabecera/header.css">
+        <link rel="stylesheet" href="./assets/css/cabecera/menu.css">
+        <link rel="stylesheet" href="./assets/css/banner/imagenes.css">
+        <link rel="stylesheet" href="./assets/css/banner/titulo-principal.css">
+        <link rel="stylesheet" href="./assets/css/info/descripcion-info.css">
+        <link rel="stylesheet" href="./assets/css/info/info.css">
+        <link rel="stylesheet" href="./assets/css/info/titulo-info.css">
+        <link rel="stylesheet" href="./assets/css/recetas/boton-receta.css">
+        <link rel="stylesheet" href="./assets/css/recetas/contenido-receta.css">
+        <link rel="stylesheet" href="./assets/css/recetas/descripcion-receta.css">
+        <link rel="stylesheet" href="./assets/css/recetas/imagen-receta.css">
+        <link rel="stylesheet" href="./assets/css/recetas/receta.css">
+        <link rel="stylesheet" href="./assets/css/recetas/titulo-receta.css">
+        <link rel="stylesheet" href="./assets/css/quienes-somos/somos-descripcion.css">
+        <link rel="stylesheet" href="./assets/css/quienes-somos/somos-titulo.css">
+        <link rel="stylesheet" href="./assets/css/quienes-somos/somos.css">
+        <link rel="stylesheet" href="./assets/css/quienes-somos/persona-imagen.css">
+        <link rel="stylesheet" href="./assets/css/quienes-somos/persona-nombre.css">
+        <link rel="stylesheet" href="./assets/css/quienes-somos/persona-ocupacion.css">
+        <link rel="stylesheet" href="./assets/css/quienes-somos/persona.css">
+        <link rel="stylesheet" href="./assets/css/quienes-somos/personas.css">
+        <link rel="stylesheet" href="./assets/css/footer/descripcion-footer.css">
+        <link rel="stylesheet" href="./assets/css/footer/icono-footer.css">
+        <link rel="stylesheet" href="./assets/css/footer/item-footer.css">
+        <link rel="stylesheet" href="./assets/css/footer/titulo-footer.css">
+        <link rel="stylesheet" href="./assets/css/footer/footer.css">
+    </head>
 <body>
     <div id="header"></div>
     <script>
@@ -19,16 +53,29 @@
             });
     </script>
     <main>
-        <section class="informacion__destacada">
-            <div>
-                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <div class="informacion__destacada-boton">
-                    <a href="#">Pruébalo ahora</a>
+        <section class="slider">
+            <img class="slider__banner" src="./assets/img/banner-comida-saludable.jpg" alt="Plato con comida saludable">
+            <h1 class="tituloPrincipal">Reviviendo recuerdos a través de deliciosas preparaciones</h1>
+        </section>
+        <section class="somos">
+            <h3 class="somos__titulo">Nuestras Especialidades</h3>
+            <p class="somos_descripcion">Descubre los platos que nos hacen únicos y que cuentan nuestra historia a través de sabores incomparables.</p>
+            <div class="personas">
+                <div class="persona">
+                    <div class="persona__imagen persona__imagen--wilman--hoteleria"></div>
+                    <span class="persona__nombre">Platos Tradicionales</span>
+                    <span class="persona_cargo">Recetas heredadas de nuestra abuela, llenas de tradición y sabor.</span>
                 </div>
-            </div>
-            <div>
-                <img src="./imagenes/nuevo-mensaje.png" alt="Logo" class="informacion__destacada-imagen">
+                <div class="persona">
+                    <div class="persona__imagen persona__imagen--wilman--mantenimiento"></div>
+                    <span class="persona__nombre">Creaciones Innovadoras</span>
+                    <span class="persona_cargo">Una fusión de sabores modernos con un toque tradicional, ideal para los paladares más exigentes.</span>
+                </div>
+                <div class="persona">
+                    <div class="persona__imagen persona__imagen--wilman--tecnologo"></div>
+                    <span class="persona__nombre">Desayunos de la Casa</span>
+                    <span class="persona_cargo">El comienzo perfecto para un día lleno de energía y sabor inolvidable.</span>
+                </div>
             </div>
         </section>
     </main>

@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketin por Correo Electrónico</title>
-    <link rel="stylesheet" href="./ css/styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Productos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comme:wght@200;300&family=Montserrat:wght@100&family=Pacifico&family=Playfair+Display:wght@500&family=Tsukimi+Rounded:wght@700&family=Voces&display=swap"
+            rel="stylesheet">
+        <link href="./assets/css/normalize.css" rel="stylesheet" />
+        <link href="./assets/css/reset.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/css/variables.css">
+        <link rel="stylesheet" href="./assets/css/cabecera/header.css">
+        <link rel="stylesheet" href="./assets/css/cabecera/menu.css">
+        <link rel="stylesheet" href="./assets/css/banner/imagenes.css">
+        <link rel="stylesheet" href="./assets/css/banner/titulo-principal.css">
+        <link rel="stylesheet" href="./assets/css/info/descripcion-info.css">
+        <link rel="stylesheet" href="./assets/css/info/info.css">
+        <link rel="stylesheet" href="./assets/css/info/titulo-info.css">
+        <link rel="stylesheet" href="./assets/css/recetas/boton-receta.css">
+        <link rel="stylesheet" href="./assets/css/recetas/contenido-receta.css">
+        <link rel="stylesheet" href="./assets/css/recetas/descripcion-receta.css">
+        <link rel="stylesheet" href="./assets/css/recetas/imagen-receta.css">
+        <link rel="stylesheet" href="./assets/css/recetas/receta.css">
+        <link rel="stylesheet" href="./assets/css/recetas/titulo-receta.css">
+        <link rel="stylesheet" href="./assets/css/quienes-somos/somos-descripcion.css">
+        <link rel="stylesheet" href="./assets/css/quienes-somos/somos-titulo.css">
+        <link rel="stylesheet" href="./assets/css/quienes-somos/somos.css">
+        <link rel="stylesheet" href="./assets/css/quienes-somos/persona-imagen.css">
+        <link rel="stylesheet" href="./assets/css/quienes-somos/persona-nombre.css">
+        <link rel="stylesheet" href="./assets/css/quienes-somos/persona-ocupacion.css">
+        <link rel="stylesheet" href="./assets/css/quienes-somos/persona.css">
+        <link rel="stylesheet" href="./assets/css/quienes-somos/personas.css">
+        <link rel="stylesheet" href="./assets/css/footer/descripcion-footer.css">
+        <link rel="stylesheet" href="./assets/css/footer/icono-footer.css">
+        <link rel="stylesheet" href="./assets/css/footer/item-footer.css">
+        <link rel="stylesheet" href="./assets/css/footer/titulo-footer.css">
+        <link rel="stylesheet" href="./assets/css/footer/footer.css">
+    </head>
 <body>
     <div id="header"></div>
     <script>
@@ -19,7 +53,86 @@
             });
     </script>
     <main>
-
+        <section class="recetas">
+            <h2>Descubre Nuestros Sabores Únicos: Cotiza Nuestros Productos Hoy</h2>
+            <p class="info__descripcion">Explora la riqueza de nuestras tradiciones culinarias y déjate llevar por una experiencia gastronómica incomparable.</p>
+        </section>
+        <section class="recetas">
+            <div class="receta">
+                <img class="receta__imagen" src="./assets/img/recetas/empanadas.jpg" alt="Empanadas">
+                <div class="receta__contenido">
+                    <h4 class="receta__nombre">Empanadas Caseras</h4>
+                    <p class="receta_preparacion">Disfruta el crujiente sabor casero de las Empanadas. Con su masa crujiente y jugoso relleno, me he animado a darle un toque personal.</p>
+                    <div>
+                        <input type="number" class="receta_cantidad" value="0" min="0">
+                        <button class="receta_boton">Seleccionar</button>
+                    </div>
+                </div>
+            </div>            
+            <div class="receta">
+                <img class="receta__imagen" src="./assets/img/recetas/lechona.jpg" alt="Lechona">
+                <div class="receta__contenido">
+                    <h4 class="receta__nombre">Lechona</h4>
+                    <p class="receta_preparacion">Disfruta el delicioso sabor de la Lechona. Me he
+                        animado a darle un toque personal.</p>
+                        <div>
+                            <input type="number" class="receta_cantidad" value="0" min="0">
+                            <button class="receta_boton">Seleccionar</button>
+                        </div>
+                </div>
+            </div>
+            <div class="receta">
+                <img class="receta__imagen" src="./assets/img/recetas/pollo.curry.jpg" alt="Pollo al curry">
+                <div class="receta__contenido">
+                    <h4 class="receta__nombre">Pollo al Curry</h4>
+                    <p class="receta_preparacion">Disfruta el sabor casero del Pollo al Curry. Con su jugosa carne y
+                        suave salsa, me he animado a darle un toque personal.</p>
+                        <div>
+                            <input type="number" class="receta_cantidad" value="0" min="0">
+                            <button class="receta_boton">Seleccionar</button>
+                        </div>
+                </div>
+            </div>
+            <div class="receta">
+                <img class="receta__imagen" src="./assets/img/recetas/cupcakes.jpg" alt="Cup Cakes decorados">
+                <div class="receta__contenido">
+                    <h4 class="receta__nombre">Cup Cakes de Vainilla</h4>
+                    <p class="receta_preparacion">Disfruta unos esponjosos Cup Cakes de Vainilla. Con su delicioso
+                        sabor,
+                        me he animado a darle un toque personal.</p>
+                        <div>
+                            <input type="number" class="receta_cantidad" value="0" min="0">
+                            <button class="receta_boton">Seleccionar</button>
+                        </div>
+                </div>
+            </div>
+            <div class="receta">
+                <img class="receta__imagen" src="./assets/img/recetas/postre-cafe.jpg" alt="Postre de café">
+                <div class="receta__contenido">
+                    <h4 class="receta__nombre">Postre de Café</h4>
+                    <p class="receta_preparacion">Disfruta el adictivo saber del Café en un Postre. Con su masa
+                        crujiente y jugoso relleno, me he animado a darle un toque personal.</p>
+                        <div>
+                            <input type="number" class="receta_cantidad" value="0" min="0">
+                            <button class="receta_boton">Seleccionar</button>
+                        </div>
+                </div>
+            </div>
+            <div class="receta">
+                <img class="receta__imagen" src="./assets/img/recetas/guarnicion-zanahoria.jpg"
+                    alt="Guarnición de Zanahoria">
+                <div class="receta__contenido">
+                    <h4 class="receta__nombre">Guarnición de Zanahoria</h4>
+                    <p class="receta_preparacion">Disfruta el el delicado sabor de la zanahoria. Con su delicioso arroz,
+                        me he
+                        animado a darle un toque personal.</p>
+                        <div>
+                            <input type="number" class="receta_cantidad" value="0" min="0">
+                            <button class="receta_boton">Seleccionar</button>
+                        </div>
+                </div>
+            </div>
+        </section>
     </main>
     <div id="footer"></div>
     <script>
@@ -32,8 +145,10 @@
                 console.error('Hubo un problema con la solicitud fetch:', error);
             });
     </script>
-    <script src="./app.js"></script>
+    <script src="./app/app.js"></script>
 </body>
 </html>
+
+
 
 <!---->

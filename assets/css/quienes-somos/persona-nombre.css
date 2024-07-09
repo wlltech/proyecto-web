@@ -1,0 +1,7 @@
+.persona__nombre {
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    color: var(--color-text-secondary);
+    margin: 1rem 0;
+}
