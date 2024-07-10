@@ -39,6 +39,7 @@
         <link rel="stylesheet" href="./assets/css/footer/item-footer.css">
         <link rel="stylesheet" href="./assets/css/footer/titulo-footer.css">
         <link rel="stylesheet" href="./assets/css/footer/footer.css">
+        <link rel="stylesheet" href="./assets/css/productos/productos.css">
     </head>
 <body>
     <div id="header"></div>
@@ -52,32 +53,39 @@
                 console.error('Hubo un problema con la solicitud fetch:', error);
             });
     </script>
+
     <main>
+        <div class="totales">
+            <div id="header"></div>
+            <div id="total"></div>
+            <ul class="lista-productos"></ul>   
+        </div>
         <section class="recetas">
-            <h2>Descubre Nuestros Sabores Únicos: Cotiza Nuestros Productos Hoy</h2>
-            <p class="info__descripcion">Explora la riqueza de nuestras tradiciones culinarias y déjate llevar por una experiencia gastronómica incomparable.</p>
+            <h2 class="info__titulo">Descubre Nuestros Sabores Únicos: Cotiza Nuestros Productos Hoy</h2>
+            <p class="info__descripcion info__descripcion-productos">Explora la riqueza de nuestras tradiciones culinarias.</p>
         </section>
         <section class="recetas">
             <div class="receta">
                 <img class="receta__imagen" src="./assets/img/recetas/empanadas.jpg" alt="Empanadas">
                 <div class="receta__contenido">
                     <h4 class="receta__nombre">Empanadas Caseras</h4>
-                    <p class="receta_preparacion">Disfruta el crujiente sabor casero de las Empanadas. Con su masa crujiente y jugoso relleno, me he animado a darle un toque personal.</p>
-                    <div>
+                    <p class="receta_preparacion">Disfruta el crujiente sabor casero de las Empanadas. Con su masa crujiente y
+                        jugoso relleno, me he animado a darle un toque personal.</p>
+                    <div class="receta__contenido-cantidad">
                         <input type="number" class="receta_cantidad" value="0" min="0">
-                        <button class="receta_boton">Seleccionar</button>
+                        <button class="receta_boton">Agregar</button>
                     </div>
                 </div>
-            </div>            
+            </div>
             <div class="receta">
                 <img class="receta__imagen" src="./assets/img/recetas/lechona.jpg" alt="Lechona">
                 <div class="receta__contenido">
                     <h4 class="receta__nombre">Lechona</h4>
                     <p class="receta_preparacion">Disfruta el delicioso sabor de la Lechona. Me he
                         animado a darle un toque personal.</p>
-                        <div>
+                        <div class="receta__contenido-cantidad">
                             <input type="number" class="receta_cantidad" value="0" min="0">
-                            <button class="receta_boton">Seleccionar</button>
+                            <button class="receta_boton">Agregar</button>
                         </div>
                 </div>
             </div>
@@ -87,9 +95,9 @@
                     <h4 class="receta__nombre">Pollo al Curry</h4>
                     <p class="receta_preparacion">Disfruta el sabor casero del Pollo al Curry. Con su jugosa carne y
                         suave salsa, me he animado a darle un toque personal.</p>
-                        <div>
+                        <div class="receta__contenido-cantidad">
                             <input type="number" class="receta_cantidad" value="0" min="0">
-                            <button class="receta_boton">Seleccionar</button>
+                            <button class="receta_boton">Agregar</button>
                         </div>
                 </div>
             </div>
@@ -100,9 +108,9 @@
                     <p class="receta_preparacion">Disfruta unos esponjosos Cup Cakes de Vainilla. Con su delicioso
                         sabor,
                         me he animado a darle un toque personal.</p>
-                        <div>
+                        <div class="receta__contenido-cantidad">
                             <input type="number" class="receta_cantidad" value="0" min="0">
-                            <button class="receta_boton">Seleccionar</button>
+                            <button class="receta_boton">Agregar</button>
                         </div>
                 </div>
             </div>
@@ -112,9 +120,9 @@
                     <h4 class="receta__nombre">Postre de Café</h4>
                     <p class="receta_preparacion">Disfruta el adictivo saber del Café en un Postre. Con su masa
                         crujiente y jugoso relleno, me he animado a darle un toque personal.</p>
-                        <div>
+                        <div class="receta__contenido-cantidad">
                             <input type="number" class="receta_cantidad" value="0" min="0">
-                            <button class="receta_boton">Seleccionar</button>
+                            <button class="receta_boton">Agregar</button>
                         </div>
                 </div>
             </div>
@@ -126,9 +134,9 @@
                     <p class="receta_preparacion">Disfruta el el delicado sabor de la zanahoria. Con su delicioso arroz,
                         me he
                         animado a darle un toque personal.</p>
-                        <div>
+                        <div class="receta__contenido-cantidad">
                             <input type="number" class="receta_cantidad" value="0" min="0">
-                            <button class="receta_boton">Seleccionar</button>
+                            <button class="receta_boton">Agregar</button>
                         </div>
                 </div>
             </div>

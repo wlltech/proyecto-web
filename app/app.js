@@ -1,16 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Elemento donde mostraremos el total
+    const totalElemento = document.getElementById('total');
+    // Elemento para mostrar la lista de productos seleccionados
+    const listaProductos = document.querySelector('.lista-productos');
+
     // Obtener todos los botones de seleccionar
     const botonesSeleccionar = document.querySelectorAll('.receta_boton');
-    // Elemento donde mostraremos el total
-    const totalElemento = document.createElement('p');
-    totalElemento.classList.add('info__descripcion');
-    totalElemento.textContent = 'Total: $0.00';
-    document.querySelector('main').appendChild(totalElemento);
-
-    // Elemento para mostrar la lista de productos seleccionados
-    const listaProductos = document.createElement('ul');
-    listaProductos.classList.add('lista-productos');
-    document.querySelector('main').appendChild(listaProductos);
 
     // Inicializar el total y la lista de productos seleccionados
     let total = 0;
@@ -42,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             // Actualizar el texto del total
-            totalElemento.textContent = `Total: $${total.toFixed(2)}`;
+            totalElemento.textContent = `Total de productos: $${total.toFixed(2)}`;
 
             // Actualizar la lista de productos seleccionados
             actualizarListaProductos();
@@ -85,9 +80,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const btnEliminar = document.createElement('button');
             btnEliminar.textContent = 'Eliminar';
             btnEliminar.addEventListener('click', function() {
-                // Eliminar el producto del Map y actualizar el total y la lista
-                total -= obtenerPrecio(producto) * cantidad;
-                totalElemento.textContent = `Total: $${total.toFixed(2)}`;
+                // Obtener el precio del producto a eliminar
+                const precioProducto = obtenerPrecio(producto);
+
+                // Actualizar el total y la lista de productos seleccionados
+                total -= precioProducto * cantidad;
+                totalElemento.textContent = `Total de productos: $${total.toFixed(2)}`;
                 productosSeleccionados.delete(producto);
                 actualizarListaProductos();
             });
@@ -96,4 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
             listaProductos.appendChild(itemLista);
         });
     }
+
+    // Mostrar la lista de productos inicialmente
+    actualizarListaProductos();
 });

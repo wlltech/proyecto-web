@@ -1,0 +1,60 @@
+
+    .formulario__login-titulo,
+    .info__titulo {
+        text-align: center;
+        margin: 1.5rem 0 1.5rem 0;
+    }
+
+    .formularios__standard,
+    .formulario_login-formulario,
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        margin: 0 3rem 1rem 3rem;
+        height: 2rem;
+    }
+
+    label {
+        margin: 1rem 2.5rem 0.5rem 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    button {
+        background-color: var(--color-primary);
+        border: none;
+        font-size: 1.5rem;
+        color: var(--color-text-primary);
+        padding: 1rem;
+        border-radius: 5px;
+        width: 300px;
+    }
+
+    .formulario__boton {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form__contacto-boton {
+        background-color: var(--color-primary);
+        border: none;
+        font-size: 1.5rem;
+        color: var(--color-text-primary);
+        border-radius: 5px;
+    }
+
+    @media (min-width: 768px) {
+        button {
+          width: 400px;
+        }
+
+        input,
+        label {
+            width: 400px;
+        }
+
+      }
+

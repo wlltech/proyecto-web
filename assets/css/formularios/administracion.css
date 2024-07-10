@@ -1,0 +1,72 @@
+/* Estilos base para la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0; /* Márgenes ajustados para móvil */
+    font-size: 16px; /* Tamaño de fuente ajustado para móvil */
+}
+
+.table th, .table td {
+    padding: 10px; /* Padding reducido para móvil */
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table a {
+    margin-right: 8px; /* Espacio reducido entre enlaces para móvil */
+    text-decoration: none;
+    color: #007bff;
+    display: block; /* Cambia a formato de bloque para móvil */
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    .table {
+        overflow-x: auto; /* Hace scroll horizontal en móviles */
+        display: block;
+    }
+
+    .table th, .table td {
+        width: auto; /* Ancho automático para celdas en móviles */
+        padding: 8px; /* Padding reducido para móvil */
+    }
+
+    .table th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .table td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 10px; /* Reducido el espacio a la izquierda */
+        white-space: normal;
+        text-align: left;
+    }
+
+    .table td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+}

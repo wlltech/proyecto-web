@@ -1,0 +1,134 @@
+h2 {
+    text-align: center;
+    margin: 2rem 2.5rem 1rem 2.5rem;
+}
+
+.info__descripcion,
+.info__descripcion-productos {
+    margin: 2rem 2.5rem 1rem 2.5rem;
+}
+
+.receta__contenido-cantidad {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.receta__contenido-cantidad,
+input {
+    height: 2rem;
+}
+
+.info__descripcion {
+    font-size: -webkit-xxx-large;
+}
+
+.lista-productos {
+    text-align: center;
+    font-size: 1rem;
+    list-style-type: none;
+}
+
+.lista-productos,
+button {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+.lista-productos li button {
+    background-color: var(--color-text-secondary);
+    color: var(--color-tertiary);;
+}
+
+.receta_boton{
+    background-color: var(--color-text-secondary);
+    color: var(--color-tertiary);;
+}
+
+#total {
+    text-align: center;
+    margin: 2rem 2.5rem 1rem 2.5rem;
+    font-size: 2rem;
+}
+
+body {
+    margin: 0;
+    font-family: 'Comme', sans-serif;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.totales {
+    position: fixed;
+    top: 60px; /* Ajusta según la altura de tu header */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#total {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem; /* Ajusta para dispositivos móviles */
+}
+
+.lista-productos {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%; /* Asegura que tome el ancho completo en móviles */
+}
+
+.lista-productos li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin: 0.5rem 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.lista-productos button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Espacio superior al contenido principal para compensar los elementos fijos */
+main {
+    margin-top: 10rem; /* Ajusta según la altura combinada de tu header y la sección de totales */
+}
+
+/* Media queries para pantallas más grandes */
+@media (min-width: 768px) {
+    #total {
+        font-size: 2rem; /* Ajusta para pantallas más grandes */
+    }
+
+    .lista-productos {
+        max-width: 600px; /* Ajusta según tus necesidades */
+    }
+}
